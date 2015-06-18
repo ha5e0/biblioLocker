@@ -113,9 +113,9 @@
             this.textBoxNumer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxNumer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxNumer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxNumer.Location = new System.Drawing.Point(193, 211);
+            this.textBoxNumer.Location = new System.Drawing.Point(173, 227);
             this.textBoxNumer.Name = "textBoxNumer";
-            this.textBoxNumer.Size = new System.Drawing.Size(100, 26);
+            this.textBoxNumer.Size = new System.Drawing.Size(120, 26);
             this.textBoxNumer.TabIndex = 0;
             this.textBoxNumer.Tag = "";
             this.textBoxNumer.UseSystemPasswordChar = true;
@@ -137,7 +137,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(181, 240);
+            this.label1.Location = new System.Drawing.Point(177, 211);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 10;
@@ -147,7 +147,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(326, 240);
+            this.label2.Location = new System.Drawing.Point(324, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 11;
@@ -170,7 +170,7 @@
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
             this.buttonSubmit.TabIndex = 2;
-            this.buttonSubmit.Text = "Wejdz";
+            this.buttonSubmit.Text = "Odblokuj";
             this.buttonSubmit.UseVisualStyleBackColor = true;
             this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
@@ -179,9 +179,9 @@
             this.textBoxData.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxData.Location = new System.Drawing.Point(299, 211);
+            this.textBoxData.Location = new System.Drawing.Point(299, 227);
             this.textBoxData.Name = "textBoxData";
-            this.textBoxData.Size = new System.Drawing.Size(100, 26);
+            this.textBoxData.Size = new System.Drawing.Size(120, 26);
             this.textBoxData.TabIndex = 1;
             this.textBoxData.UseSystemPasswordChar = true;
             this.textBoxData.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxData_KeyDown);
@@ -221,7 +221,7 @@
             this.Name = "Form1";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "MBP Iława";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);

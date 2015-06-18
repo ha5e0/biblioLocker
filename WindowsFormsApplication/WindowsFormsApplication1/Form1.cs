@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.FileIO;
 
 namespace WindowsFormsApplication1
 {
@@ -69,9 +70,30 @@ namespace WindowsFormsApplication1
             this.Visible = true;
         }
 
+        private bool isUserCorrect(string s_numer, string s_data)
+        {
+            using (TextFieldParser parser = new TextFieldParser(".\\czyt.csv"))
+            {
+                parser.Delimiters = new string[] { "," };
+
+                while (true)
+                {
+                    string[] parts = parser.ReadFields();
+                    if (parts == null) break;
+
+                    if (s_numer == parts[0] && s_data == parts[1])
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            if (textBoxNumer.Text == "000001" && textBoxData.Text == "2000")
+            if (isUserCorrect(textBoxNumer.Text, textBoxData.Text))
             {
                 MessageBox.Show(new Form() { TopMost = true }, "Dobrze!");
                 logOffTimer.Enabled = true;
